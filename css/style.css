@@ -688,6 +688,65 @@ a:focus {
 
 
 /**********************************/
+/*********** Timeline CSS **********/
+/**********************************/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 200, 255, 0.4);
+}
+
+.timeline-date {
+  min-width: 140px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.timeline-content h4 {
+  margin: 5px 0 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.timeline-content p {
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.timeline-content ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+
+/**********************************/
 /*********** Service CSS **********/
 /**********************************/
 .service {
